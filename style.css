@@ -2,6 +2,7 @@ body,* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: black;
 }
 
 header {
@@ -18,17 +19,20 @@ header {
 
 header .banner {
     font-size: 45px;
+    background-color: teal;
 }
-header.links {
+.links {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: teal;
 }
 header .links a{
     text-decoration: none;
     color: white;
     font-size: 20px;
     transition: 0.5s;
+    background-color: teal;
 }
 .links a:hover {
     color: gold;
@@ -60,6 +64,48 @@ header .links a{
         transform: translateY(-10px);
     }
 }
+
+main {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main div {
+    width: 50vw;
+    height: 50vh;
+    background: black;
+    border-radius: 10px;
+    font-size: 65px;
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    font-family: sans-serif;
+    animation: 2s welcome ease-in-out;
+    animation-timing-function: ease-in-out;
+    transition: 1s;
+}
+@keyframes welcome {
+    0% {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        animation-play-state: paused;
+    }
+
+}
+
+
+
+
 
 @media (max-width : 500px) {
     header {
