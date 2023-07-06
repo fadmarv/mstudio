@@ -55,3 +55,20 @@ header .links a{
         transform: translateY(-10px);
     }
 }
+
+@media (max-width : 500px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    header .banner {
+        font-size: 25px;
+    }
+    header .links a{
+        font-size: 15px;
+    }
+    .img {
+        display: none;
+    }
+}
