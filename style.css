@@ -125,4 +125,7 @@ main div {
     .img {
         display: none;
     }
+    main div {
+        font-size: 25px;
+    }
 }
